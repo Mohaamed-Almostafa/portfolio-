@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body >
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-35 jumbotron" >
+    <a class="navbar-brand" href="index.html"><img src="images/logo.png" style="width: 70px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item">
+          <a class="nav-link btn  ms-5 p-2" href="#about">حول</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn ms-5 p-2" href="#skills">مهاراتي</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn ms-5 p-2" href="contact.html">تواصل</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="jumbotron text-center p-5">
+    <img src="images/me/me.png " style="width: 400px; height:400px ;" alt="">
+    <h1>مرحبا اسمي "محمد المصطفى"</h1>
+    <h2>مرحبا بكم في موقعي</h2>
+  </header>
+
+  <section id="about" class="container">
+    <h2>عنّي</h2>
+    <strong>انا طالب معهد أمن المعلومات والشبكات في الجامعة الدولية للعلوم والنهضة اهتم ي تطوير مواقع الويب </strong>
+  </section>
+
+  <section id="projects" class="container mt-4 mb-1">
+    <h2>My Projects</h2>
+    <div class="row">
+      <div class="col-md-4 ">
+        <div id="#1" class="carousel slide " data-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="images/p1/p1-1.png" class="d-block w-100" alt="Project 2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/p1/p1-2.png" class="d-block w-100" alt="Project 2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/p1/p1-3.png" class="d-block w-100" alt="Project 2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/p1/p1-4.png" class="d-block w-100" alt="Project 2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/p1/p1-5.png" class="d-block w-100" alt="Project 2">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#pj1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+          <a class="carousel-control-next" href="#pj1" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title m-2">مشروعي الأول</h5>
+          <p class="card-text" id="pj1" class="collapse">هو تطبيق مطعم ديليفري وداخلي  >تم العمل عليه بواسطة اللغة البرمجية Dart وبيئة العمل flutter</p>
+          <a href="#pj1" class="btn btn-secondary" data-toggle="collapse">قراءة المزيد</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div id="2" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner rounded ">
+            <div class="carousel-item active ">
+              <img src="images/p2/1.png" class="d-block w-100 " alt="Project 2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/p2/3.png" class="d-block w-100" alt="Project 2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/p2/4.png" class="d-block w-100" alt="Project 2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/p2/10.png" class="d-block w-100" alt="Project 2">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#pj2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+          <a class="carousel-control-next" href="#pj2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+        </div>
+        
+        <div class="card-body">
+          <h5 class="card-title m-2">مشروعي الثاني</h5>
+          <p class="card-text" id="pj2" class="collapse">مشروعي هو مستوصف عام تم العمل عليه بواسطة اللغة البرمجية python وبيئة العمل django وتم تصميمه بواسطةال html & css </p>
+          <a href="#pj2" class="btn btn-secondary" data-toggle="collapse" aria-expanded="false">قراءة المزيد</a>
+        </div>
+      </div>
+      <div class="col-md-4 ">
+        <div id="3" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active ">
+              <img src="images/p3/p3-1.png" class="d-block w-100" alt="Project 3">
+            </div>
+            <div class="carousel-item  rounded">
+              <img src="images/p3/p3-2.png" class="d-block w-100" alt="Project 3">
+            </div>
+            <div class="carousel-item rounded">
+              <img src="images/p3/p3-3.png" class="d-block w-100" alt="Project 3">
+            </div>
+            <div class="carousel-item rounded">
+              <img src="images/p3/p3-4.png" class="d-block w-100" alt="Project 3">
+            </div>
+            
+          </div>
+          <a class="carousel-control-prev" href="#pj3" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+          <a class="carousel-control-next" href="#pj3" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+
+        </div>
+        <div class="card-body">
+          <h5 class="card-title m-2"> مشروعي الثالث</h5>
+          <p class="card-text" id="pj3" class="collapse">مشروعي هو مكتبة لبيع وقراءة الكتب تم العمل عليه بواسطة اللغة البرمجية python وبيئة العمل django وتم تصميمه بواسطةال html & css </p>
+          <a href="#pj3" class="btn btn-secondary" data-toggle="collapse">قراءة المزيد</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="container py-5">
+  <h2 class="text-center mb-5">مهاراتي</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Front-end Development</h3>
+      <div class="d-flex">
+        <i class="p-2"><img src="images/logo-skills/html5-96.png"  alt="bg1"></i>
+        <i class="p-2"><img src="images/logo-skills/css-100.png" class="bg1"  alt=""></i>
+        <i class="p-2"><img src="images/logo-skills/java-script-94.png" class="bg1" alt=""></i>
+        <i class="p-2"><img src="images/logo-skills/bootstrap-96.png"  class="bg1" alt=""></i>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h3>Back-end Development</h3>
+      <div class="d-flex">
+          <i class="p-2"><img src="images/logo-skills/database-94.png" class="bg1"  alt=""></i>
+          <i class="p-2"><img src="images/logo-skills/python-96.png" class="bg1"  alt=""></i>
+          <i class="p-2"><img src="images/logo-skills/flutter-96.png" class="bg1"  alt=""></i>    
+          <i class="p-2"><img src="images/logo-skills/djang-96.png" class="bg1"  alt=""></i>  
+          <i class="p-2"><img src="images/logo-skills/dart-96.png" class="bg1"  alt=""></i>
+        </div>
+      </div>
+  </div>
+</section>
+  <footer class="bg-dark  text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">للتواصل:</h5>
+          <strong>
+           Email:mahamode457@gmail.com
+         </strong> 
+          <div class="social-links">
+            <a href="#" class="social-link"><i class=""><img src="images/logo-skills/icons8-facebook-48.png" alt=""></i></a>
+            <a href="#" class="social-link"><i class=""><img src="images/logo-skills/icons8-instagram-48.png" alt=""></i></a>
+            <a href="#" class="social-link"><i class=""><img src="images/logo-skills/icons8-twitter-50.png" alt=""></i></a>
+            <a href="#" class="social-link"><i class=""><img src="images/logo-skills/icons8-github-64.png" alt=""></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0 d-block">
+          <h4 class="">الموقع:</h4>
+  
+          <strong>
+            اعزاز-الحي الغربي
+          </strong> 
+          
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
