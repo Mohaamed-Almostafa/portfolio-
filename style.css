@@ -1,0 +1,260 @@
+body {
+  color: #ffffff;
+  background-image: url(images/1126171.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  font-family: monospace;
+  font-size: 1.2rem; /* استبدال الحجم الثابت بوحدة نسبية */
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  background-color: #701999;
+}
+
+/* الصور الدائرية */
+.rounded {
+  border-radius: 140px;
+}
+
+/* تحسين عرض الأيقونات */
+.bgc {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  position: relative;
+}
+
+.bgc i {
+  position: absolute;
+  left: 10px;
+}
+
+.list-group-item {
+  position: relative;
+  padding-left: 60px;
+}
+
+.list-group-item i {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+/* تحسين فقرة النصوص */
+p {
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #a343e49a, #b03dddb0, #1289b494, #379dc283);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* تأثير الخلفية */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* تحسين عرض أيقونات المهارات */
+.bg1 {
+  background-color: #00000023;
+  border-radius: 45px;
+  max-width: 70px;
+  height: auto;
+}
+
+/* ✅ ميديا كويري للتحكم في استجابة الموقع */
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .rounded {
+    border-radius: 70px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .d-flex {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .bg1 {
+    max-width: 60px;
+    margin: 5px;
+  }
+
+  .navbar-brand img {
+    width: 50px !important;
+  }
+
+  .carousel-inner {
+    border-radius: 20px !important;
+  }
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.skills-grid img {
+
+  object-fit: contain;
+  background-color: #00000023;
+  border-radius: 20px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skills-grid img:hover {
+  transform: scale(1.1);
+}
+
+
+/* شريط تنقل شفاف وجذاب */
+.custom-navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  padding: 10px 0;
+  z-index: 999;
+}
+
+/* تلوين الروابط */
+.navbar .nav-link {
+  color: #fff;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  background-color: #701999;
+  color: #fff;
+}
+
+/* عند تمرير الصفحة */
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  transition: background-color 0.3s ease;
+}
+
+/* تنسيق الحقول والنصوص في نموذج التواصل */
+section#contact {
+  max-width: 600px;
+  margin: 120px auto 60px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(112, 25, 153, 0.5);
+}
+
+section#contact h2 {
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+  text-shadow: 0 0 10px #701999cc;
+}
+
+form label {
+  font-weight: 600;
+  color: #fff;
+}
+
+form input,
+form textarea {
+  background-color: rgba(255 255 255 / 0.15);
+  border: 1px solid rgba(255 255 255 / 0.4);
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #ddd;
+  opacity: 1;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  background-color: rgba(255 255 255 / 0.3);
+  border-color: #701999;
+  color: #fff;
+  box-shadow: 0 0 8px #701999aa;
+}
+
+/* زر الإرسال */
+.btn-primary {
+  background-color: #701999;
+  border-color: #701999;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #560e7c;
+  border-color: #560e7c;
+}
+
+/* تحسين الاستجابة */
+@media (max-width: 768px) {
+  section#contact {
+    margin: 100px 15px 40px;
+    padding: 20px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}

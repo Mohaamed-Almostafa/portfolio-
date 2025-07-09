@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar shadow-sm">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="images/logo.png" alt="Logo" width="50" height="50" class="me-2">
+      
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto text-center">
+        <li class="nav-item">
+          <a class="nav-link px-3" href="#about">حول</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="#projects">المشاريع</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="#skills">مهاراتي</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="contact.html">تواصل</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Header -->
+  <header class="text-center p-5">
+    <img src="images/me/me.png" loading="lazy" style="width: 400px; height: 400px;" alt="">
+    <h1>مرحبا اسمي "محمد المصطفى"</h1>
+    <h2>مرحبا بكم في موقعي</h2>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="container">
+    <h2>عنّي</h2>
+    <strong>متخرج من معهد أمن المعلومات والشبكات في الجامعة الدولية للعلوم والنهضة وادرس حاليا في كلية الهندسة المعلوماتية، أهوى تطوير مواقع الويب.</strong>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container mt-4 mb-1">
+    <h2>مشاريعي</h2>
+    <div class="row">
+
+      <!-- Project 1 -->
+      <div class="col-md-4">
+        <div id="pj1-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active"><img src="images/p1/p1-1.png" class="d-block w-100" loading="lazy" alt=""></div>
+            <div class="carousel-item"><img src="images/p1/p1-2.png" class="d-block w-100" loading="lazy" alt=""></div>
+            <div class="carousel-item"><img src="images/p1/p1-3.png" class="d-block w-100" loading="lazy" alt=""></div>
+            <div class="carousel-item"><img src="images/p1/p1-4.png" class="d-block w-100" loading="lazy" alt=""></div>
+            <div class="carousel-item"><img src="images/p1/p1-5.png" class="d-block w-100" loading="lazy" alt=""></div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#pj1-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#pj1-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title m-2">مشروعي الأول</h5>
+          <p class="collapse" id="pj1-text">هو تطبيق مطعم ديليفري وداخلي  >تم العمل عليه بواسطة اللغة البرمجية Dart وبيئة العمل flutter</p>
+          <a href="#pj1-text" class="btn btn-secondary" data-bs-toggle="collapse">قراءة المزيد</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-4">
+        <div id="pj2-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active"><img src="images/p2/1.png" class="d-block w-100" loading="lazy" alt=""></div>
+            <div class="carousel-item"><img src="images/p2/3.png" class="d-block w-100" loading="lazy" alt=""></div>
+            <div class="carousel-item"><img src="images/p2/4.png" class="d-block w-100" loading="lazy" alt=""></div>
+            <div class="carousel-item"><img src="images/p2/10.png" class="d-block w-100" loading="lazy" alt=""></div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#pj2-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#pj2-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title m-2">مشروعي الثاني</h5>
+          <p class="collapse" id="pj2-text">مشروعي هو مستوصف عام تم العمل عليه بواسطة اللغة البرمجية python وبيئة العمل django وتم تصميمه بواسطةال html & css </p>
+          <a href="#pj2-text" class="btn btn-secondary" data-bs-toggle="collapse">قراءة المزيد</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4">
+        <div id="pj3-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active"><img src="images/p3/p3-1.png" class="d-block w-100" loading="lazy" alt=""></div>
+            <div class="carousel-item"><img src="images/p3/p3-2.png" class="d-block w-100" loading="lazy" alt=""></div>
+            <div class="carousel-item"><img src="images/p3/p3-3.png" class="d-block w-100" loading="lazy" alt=""></div>
+            <div class="carousel-item"><img src="images/p3/p3-4.png" class="d-block w-100" loading="lazy" alt=""></div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#pj3-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#pj3-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title m-2">مشروعي الثالث</h5>
+          <p class="collapse" id="pj3-text">مشروعي هو مكتبة لبيع وقراءة الكتب تم العمل عليه بواسطة اللغة البرمجية python وبيئة العمل django وتم تصميمه بواسطةال html & css </p>
+          
+           <a href="#pj3-text" class="btn btn-secondary" data-bs-toggle="collapse">قراءة المزيد</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+ <section id="skills" class="container py-5">
+  <h2 class="text-center mb-5">مهاراتي</h2>
+  <div class="row justify-content-center">
+    
+    <!-- Front-end Skills -->
+    <div class="col-md-8 mb-5 mx-auto">
+      <h3 class="text-center">Front-end Development</h3>
+      <div class="skills-grid">
+        <img src="images/logo-skills/html5-96.png" loading="lazy" alt="HTML">
+        <img src="images/logo-skills/css-100.png" loading="lazy" alt="CSS">
+        <img src="images/logo-skills/java-script-94.png" loading="lazy" alt="JavaScript">
+        <img src="images/logo-skills/bootstrap-96.png" loading="lazy" alt="Bootstrap">
+        <img src="images/logo-skills/react js.png" loading="lazy" alt="React">
+        <img src="images/logo-skills/nextjs.png" loading="lazy" alt="Next.js">
+      </div>
+    </div>
+
+    <!-- Back-end Skills -->
+    <div class="col-md-8 mb-4 mx-auto">
+      <h3 class="text-center">Back-end Development</h3>
+      <div class="skills-grid">
+        <img src="images/logo-skills/database-94.png" loading="lazy" alt="Database">
+        <img src="images/logo-skills/python-96.png" loading="lazy" alt="Python">
+        <img src="images/logo-skills/flutter-96.png" loading="lazy" alt="Flutter">
+        <img src="images/logo-skills/djang-96.png" loading="lazy" alt="Django">
+        <img src="images/logo-skills/dart-96.png" loading="lazy" alt="Dart">
+        <img src="images/logo-skills/new-php-logo.png" loading="lazy" alt="PHP" style="width: 80px; height: 80px;">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-4">
+    <div class="container">
+      <h5>للتواصل:</h5>
+      <strong>Email: mahamode457@gmail.com</strong>
+      <div class="social-links mt-3">
+        <a href="#"><img src="images/logo-skills/icons8-facebook-48.png" loading="lazy" alt=""></a>
+        <a href="#"><img src="images/logo-skills/icons8-instagram-48.png" loading="lazy" alt=""></a>
+        <a href="#"><img src="images/logo-skills/icons8-twitter-50.png" loading="lazy" alt=""></a>
+        <a href="#"><img src="images/logo-skills/icons8-github-64.png" loading="lazy" alt=""></a>
+      </div>
+      <div class="mt-3">
+        <h5>الموقع:</h5>
+        <strong>اعزاز - الحي الغربي</strong>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+
+      document.addEventListener('DOMContentLoaded', function () {
+    const toggleButtons = document.querySelectorAll('.toggle-btn');
+
+    toggleButtons.forEach(btn => {
+      const targetId = btn.getAttribute('href').replace('#', '');
+      const target = document.getElementById(targetId);
+
+      // عند فتح أو إغلاق العنصر
+      target.addEventListener('shown.bs.collapse', () => {
+        btn.textContent = 'عرض أقل';
+      });
+
+      target.addEventListener('hidden.bs.collapse', () => {
+        btn.textContent = 'قراءة المزيد';
+      });
+    });
+  });
+    window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.custom-navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+  </script>
+</body>
+</html>
